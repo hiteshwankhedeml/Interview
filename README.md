@@ -1,2 +1,2 @@
-# Intelligent Candidate Search & Ranking
+# 🏁 ----- Intelligent Candidate Search & Ranking -----
 

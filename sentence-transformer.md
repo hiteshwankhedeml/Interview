@@ -1,10 +1,10 @@
-# Sentence Transformer
+# 🟢 Sentence Transformer
 
-* Start with pretrained BERT encoder
-* Add pooling layer to convert token embeddings → single sentence embedding
-* Train using sentence pairs (similar / not similar)
-* Compute cosine similarity between sentence vectors
-* Apply contrastive/triplet loss to pull similar sentences closer and push dissimilar ones apart
+* <mark style="color:purple;background-color:purple;">**Start with pretrained BERT encoder**</mark>
+* <mark style="color:purple;background-color:purple;">**Add pooling layer to convert token embeddings → single sentence embedding**</mark>
+* <mark style="color:purple;background-color:purple;">**Train using sentence pairs (similar / not similar)**</mark>
+* <mark style="color:purple;background-color:purple;">**Compute cosine similarity between sentence vectors**</mark>
+* <mark style="color:purple;background-color:purple;">**Apply contrastive/triplet loss to pull similar sentences closer and push dissimilar ones apart**</mark>
 
 ```
       Sentence A                         Sentence B

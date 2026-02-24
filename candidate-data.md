@@ -1,6 +1,7 @@
-# Candidate Data
+# 🟢 Candidate Data
 
-* Notice the dense\_vector data type used here
+* <mark style="color:purple;background-color:purple;">**Notice the dense\_vector data type used here**</mark>
+* <mark style="color:purple;background-color:purple;">**We are having candidate metadata + resume text + resume embedding**</mark>
 
 ```json
 PUT /candidates
