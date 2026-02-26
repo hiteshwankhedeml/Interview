@@ -12,7 +12,7 @@
 * [🟢 Dot Product Similarity](dot-product-similarity.md)
 * [🟢 Cosine Similarity](cosine-similarity.md)
 * [🏁 ---------- 10 ----------](10.md)
-* [L2](l2.md)
+* [🟢 L2](l2.md)
 * [Hybrid Search](hybrid-search.md)
 * [🏁 End of ----- Intelligent Candidate Search & Ranking -----](end-of-intelligent-candidate-search-and-ranking.md)
 * [Temperature](temperature.md)
