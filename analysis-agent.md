@@ -1,0 +1,7 @@
+# Analysis Agent
+
+* <mark style="color:purple;background-color:purple;">**Turn raw retrieved JDs into market pattern text (4 buckets).**</mark>
+* <mark style="color:purple;background-color:purple;">**All retrieved JDs (up to 2000 chars each — token limit) will be passed to it**</mark>
+* <mark style="color:purple;background-color:purple;">**It will give - Dict keys:**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`education_patterns`**</mark><mark style="color:purple;background-color:purple;">**,**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`experience_patterns`**</mark><mark style="color:purple;background-color:purple;">**,**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`skills_patterns`**</mark><mark style="color:purple;background-color:purple;">**,**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`responsibilities_patterns`**</mark><mark style="color:purple;background-color:purple;">**,**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`market_insight`**</mark>
+* <mark style="color:purple;background-color:purple;">**Dedupes content and drops redundant headers**</mark>
+

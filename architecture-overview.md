@@ -1,0 +1,9 @@
+# Architecture Overview
+
+* <mark style="color:purple;background-color:purple;">**LangGraph**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`StateGraph`**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**— directed graph of workflow nodes + edges (control flow + shared state).**</mark>
+* <mark style="color:purple;background-color:purple;">**What a node is: Mostly a role-specific LLM call or a short fixed sub-flow (e.g. self-reflection). Research = Tavily API (not an LLM).**</mark>
+* <mark style="color:purple;background-color:purple;">**Branching: Conditional edges —**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`approve`**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**/**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`reject`**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**/**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`regenerate`**</mark><mark style="color:purple;background-color:purple;">**.**</mark>
+* Loops: Regeneration with validation feedback injected into the next generation prompt.
+* <mark style="color:purple;background-color:purple;">**“Autonomy”: Orchestration-level — graph can loop and improve without the user driving each micro-step.**</mark>
+* <mark style="color:purple;background-color:purple;">**Not claiming: Each node = standalone tool-loop “autonomous agent”**</mark> (strict sense) — see Terminology.
+

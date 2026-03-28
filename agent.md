@@ -1,0 +1,10 @@
+# Agent
+
+**Strict vs this codebase:**
+
+| Strict "agent" (tool + loop)                            | What this codebase does                                                                                                                                                                                                                                                                        |
+| ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Each step chooses tools and iterates inside one process | Most steps are one or a few LLM calls with a fixed role (system prompt). They do not run an open-ended tool loop inside each node.                                                                                                                                                             |
+| The model decides when to stop                          | Stopping and looping are mostly decided by the graph: the Reasoning step returns `approve` / `regenerate` / `reject`, and LangGraph routes accordingly.                                                                                                                                        |
+| "Autonomous" = self-directed reasoning + tools          | <mark style="color:purple;background-color:purple;">**Here "autonomous" mainly means orchestration autonomy: the workflow can regenerate without the user clicking again, using validation feedback in the next generation — not that every box is a fully self-contained tool agent.**</mark> |
+
