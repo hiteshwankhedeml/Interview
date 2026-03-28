@@ -1,4 +1,4 @@
-# Architecture Overview
+# 🟢 Architecture Overview
 
 * <mark style="color:purple;background-color:purple;">**LangGraph**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`StateGraph`**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**— directed graph of workflow nodes + edges (control flow + shared state).**</mark>
 * <mark style="color:purple;background-color:purple;">**What a node is: Mostly a role-specific LLM call or a short fixed sub-flow (e.g. self-reflection). Research = Tavily API (not an LLM).**</mark>

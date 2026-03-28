@@ -1,4 +1,4 @@
-# Agentic
+# 🟢 Agentic
 
 * <mark style="color:purple;background-color:purple;">**“Agentic” often means system-level behavior — not “every box is a tool agent.”**</mark>
 * <mark style="color:purple;background-color:purple;">**Multiple steps, state, conditional decisions (approve vs regenerate), feedback loops, role split (generate / validate / reason**</mark>

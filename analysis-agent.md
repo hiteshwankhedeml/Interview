@@ -1,4 +1,4 @@
-# Analysis Agent
+# 🟢 Analysis Agent
 
 * <mark style="color:purple;background-color:purple;">**Turn raw retrieved JDs into market pattern text (4 buckets).**</mark>
 * <mark style="color:purple;background-color:purple;">**All retrieved JDs (up to 2000 chars each — token limit) will be passed to it**</mark>

@@ -1,4 +1,4 @@
-# What Is This Project?
+# 🟢 What Is This Project?
 
 * Generates professional, <mark style="color:purple;background-color:purple;">**market-aligned**</mark> Job Descriptions
 * <mark style="color:purple;background-color:purple;">**Not pure LLM guesswork**</mark>: Searches the web for real JDs for similar roles → extracts market patterns → writes a new JD grounded in those standards.

@@ -1,4 +1,4 @@
-# Validation Agent
+# 🟢 Validation Agent
 
 <mark style="color:purple;background-color:purple;">**System prompt (summary):**</mark>
 

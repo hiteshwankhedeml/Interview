@@ -1,4 +1,4 @@
-# Communication Layer
+# 🟢 Communication Layer
 
 * <mark style="color:purple;background-color:purple;">**Role: Facilitator between Generation and Validation outputs + reflections.**</mark>
 *   <mark style="color:purple;background-color:purple;">**System prompt (summary)**</mark>

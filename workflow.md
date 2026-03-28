@@ -1,4 +1,4 @@
-# Workflow
+# 🟢 Workflow
 
 ```
 Research Agent

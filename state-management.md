@@ -1,4 +1,4 @@
-# State Management
+# 🟢 State Management
 
 * <mark style="color:purple;background-color:purple;">**Single shared state type:**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`JDGenerationState`**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**(**</mark><mark style="color:purple;background-color:purple;">**`TypedDict`**</mark><mark style="color:purple;background-color:purple;">**)**</mark>
 * **Reducer fields:** `stream_messages`, `execution_log` — **append** across nodes (not overwrite)

@@ -1,4 +1,4 @@
-# JD Generation Agent
+# 🟢 JD Generation Agent
 
 <mark style="color:purple;background-color:purple;">**System prompt (summary):**</mark>
 
