@@ -1,0 +1,19 @@
+# 🟢 Auto Propose
+
+<mark style="color:purple;background-color:purple;">**Inputs:**</mark>
+
+* <mark style="color:purple;background-color:purple;">**Saved schema name and description**</mark> (UI reminds you to save before proposing).
+* Optional extra context (e.g. “Indian GST, line items in table”).
+* <mark style="color:purple;background-color:purple;">**Optional sample PDF or image:**</mark>
+  * Rasterized with `document_raster.rasterize_upload` at 120 DPI, max 2 pages (hardcoded in `app.py` for propose flow).
+
+
+
+<mark style="color:purple;background-color:purple;">**Model Call:**</mark>
+
+* <mark style="color:purple;background-color:purple;">**Model:**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`OPENAI_VISION_MODEL`**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**(default**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`gpt-4o`**</mark><mark style="color:purple;background-color:purple;">**) — vision used if sample images attached.**</mark>
+* <mark style="color:purple;background-color:purple;">**Structured output:**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`response_format`**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**with JSON schema**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`proposed_schema_fields`**</mark><mark style="color:purple;background-color:purple;">**:**</mark>
+  * <mark style="color:purple;background-color:purple;">**`fields[]`**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**with enum**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`field_type`**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**∈**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`FIELD_TYPES`**</mark>
+  * <mark style="color:purple;background-color:purple;">**optional**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`columns[]`**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**for**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`table`**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**with**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`column_type`**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**∈**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**`TABLE_COLUMN_TYPES`**</mark>
+  * <mark style="color:purple;background-color:purple;">**`rationale`**</mark><mark style="color:purple;background-color:purple;">**&#x20;**</mark><mark style="color:purple;background-color:purple;">**(short explanation)**</mark>
+* Strict mode: tries `strict=True` first; on failure retries `strict=False` (OpenAI compatibility).
