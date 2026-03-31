@@ -1,7 +1,9 @@
 # 🟢 Candidate Data
 
-* <mark style="color:purple;background-color:purple;">**Notice the dense\_vector data type used here**</mark>
+* <mark style="color:purple;background-color:purple;">**Notice the**</mark>**&#x20;**<mark style="color:$danger;background-color:purple;">**dense\_vector data**</mark>**&#x20;**<mark style="color:purple;background-color:purple;">**type used here**</mark>
 * <mark style="color:purple;background-color:purple;">**We are having candidate metadata + resume text + resume embedding**</mark>
+* <mark style="color:purple;background-color:purple;">**We chunk the resume and them embed and then store**</mark>
+* <mark style="color:purple;background-color:purple;">**So it's possible that for the same candidate there can be multiple records in vectorDB**</mark>
 
 ```json
 PUT /candidates
