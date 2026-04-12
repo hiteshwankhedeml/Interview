@@ -1,6 +1,7 @@
 # Table of contents
 
-* [🏁 ----- JD Generation -----](README.md)
+* [🏁 ----- Intelligent Candidate Evaluation and Interview Assist -----](README.md)
+* [🏁 ----- JD Generation -----](<README (2).md>)
 * [🟢 What Is This Project?](what-is-this-project.md)
 * [🟢 Architecture Overview](architecture-overview.md)
 * [🟢 Workflow](workflow.md)
