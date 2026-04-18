@@ -1,4 +1,8 @@
-# 🟢 Agent
+---
+hidden: true
+---
+
+# ✈️ Agent
 
 **Strict vs this codebase:**
 
