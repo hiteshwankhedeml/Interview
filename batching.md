@@ -1,7 +1,7 @@
-# Batching
+# 🟢 Batching
 
-* Batching = processing multiple inputs in one LLM call
-* Reduces API calls → improves latency
+* <mark style="color:$danger;background-color:purple;">**Batching = processing multiple inputs in one LLM call**</mark>
+* <mark style="color:$danger;background-color:purple;">**Reduces API calls → improves latency**</mark>
 * Saves prompt overhead (instructions repeated once)
 * Core token usage remains mostly same
 * Use batch size of 3–5 inputs
